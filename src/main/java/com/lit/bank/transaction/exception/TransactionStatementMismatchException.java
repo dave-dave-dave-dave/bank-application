@@ -1,4 +1,4 @@
-package com.lit.bank.exception;
+package com.lit.bank.transaction.exception;
 
 public class TransactionStatementMismatchException extends RuntimeException{
 

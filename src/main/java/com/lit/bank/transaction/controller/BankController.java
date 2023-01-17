@@ -1,8 +1,8 @@
-package com.lit.bank.controller;
+package com.lit.bank.transaction.controller;
 
-import com.lit.bank.dto.TransactionDTO;
-import com.lit.bank.model.Transaction;
-import com.lit.bank.service.TransactionService;
+import com.lit.bank.transaction.dto.TransactionDTO;
+import com.lit.bank.transaction.model.Transaction;
+import com.lit.bank.transaction.service.TransactionService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

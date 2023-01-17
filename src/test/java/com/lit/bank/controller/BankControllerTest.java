@@ -2,10 +2,11 @@ package com.lit.bank.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lit.bank.dto.TransactionDTO;
-import com.lit.bank.model.BankAccount;
-import com.lit.bank.model.Transaction;
-import com.lit.bank.service.TransactionService;
+import com.lit.bank.transaction.controller.BankController;
+import com.lit.bank.transaction.dto.TransactionDTO;
+import com.lit.bank.transaction.model.BankAccount;
+import com.lit.bank.transaction.model.Transaction;
+import com.lit.bank.transaction.service.TransactionService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

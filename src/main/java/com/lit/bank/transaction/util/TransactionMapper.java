@@ -1,8 +1,8 @@
-package com.lit.bank.util;
+package com.lit.bank.transaction.util;
 
 
-import com.lit.bank.model.Transaction;
-import com.lit.bank.dto.TransactionDTO;
+import com.lit.bank.transaction.model.Transaction;
+import com.lit.bank.transaction.dto.TransactionDTO;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
@@ -14,9 +14,7 @@ public class TransactionMapper {
     public TransactionMapper() {
         ModelMapper modelMapper = new ModelMapper();
         modelMapper.createTypeMap(TransactionDTO.class, Transaction.class)
-                .addMappings(mapper -> {
-                    mapper.map(TransactionDTO::getTransactionReference, Transaction::setId);
-                });
+                .addMappings(mapper -> mapper.map(TransactionDTO::getTransactionReference, Transaction::setId));
         this.mapper = modelMapper;
     }
 

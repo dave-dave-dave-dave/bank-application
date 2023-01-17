@@ -1,4 +1,4 @@
-package com.lit.bank.validation;
+package com.lit.bank.transaction.validation;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;

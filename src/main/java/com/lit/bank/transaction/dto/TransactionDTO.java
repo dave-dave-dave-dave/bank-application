@@ -1,6 +1,6 @@
-package com.lit.bank.dto;
+package com.lit.bank.transaction.dto;
 
-import com.lit.bank.validation.ValidIBAN;
+import com.lit.bank.transaction.validation.ValidIBAN;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;

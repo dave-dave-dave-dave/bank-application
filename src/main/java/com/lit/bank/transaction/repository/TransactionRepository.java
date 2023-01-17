@@ -1,6 +1,6 @@
-package com.lit.bank.repository;
+package com.lit.bank.transaction.repository;
 
-import com.lit.bank.model.Transaction;
+import com.lit.bank.transaction.model.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

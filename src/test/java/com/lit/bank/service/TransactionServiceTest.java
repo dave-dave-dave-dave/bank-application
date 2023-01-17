@@ -1,12 +1,13 @@
 package com.lit.bank.service;
 
-import com.lit.bank.dto.TransactionDTO;
-import com.lit.bank.exception.TransactionStatementMismatchException;
-import com.lit.bank.model.BankAccount;
-import com.lit.bank.model.Transaction;
-import com.lit.bank.repository.BankAccountRepository;
-import com.lit.bank.repository.TransactionRepository;
-import com.lit.bank.util.TransactionMapper;
+import com.lit.bank.transaction.dto.TransactionDTO;
+import com.lit.bank.transaction.exception.TransactionStatementMismatchException;
+import com.lit.bank.transaction.model.BankAccount;
+import com.lit.bank.transaction.model.Transaction;
+import com.lit.bank.transaction.repository.BankAccountRepository;
+import com.lit.bank.transaction.repository.TransactionRepository;
+import com.lit.bank.transaction.service.TransactionService;
+import com.lit.bank.transaction.util.TransactionMapper;
 import jakarta.persistence.EntityExistsException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

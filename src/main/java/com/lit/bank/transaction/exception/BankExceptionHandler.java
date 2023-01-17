@@ -1,4 +1,4 @@
-package com.lit.bank.exception;
+package com.lit.bank.transaction.exception;
 
 import jakarta.persistence.EntityExistsException;
 import org.springframework.http.HttpStatus;

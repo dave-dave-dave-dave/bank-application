@@ -2,7 +2,7 @@ package com.lit.bank;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lit.bank.dto.TransactionDTO;
+import com.lit.bank.transaction.dto.TransactionDTO;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,7 +44,7 @@ public class BankIntegrationTest {
 
 
     @Test
-    void saveTransaction() throws Exception {
+    void saveTransaction_happyFlow() throws Exception {
         mockMvc.perform(post("/api/v1/transaction")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(transactionRequestBody))

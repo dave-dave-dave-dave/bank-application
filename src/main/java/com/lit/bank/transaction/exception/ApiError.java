@@ -1,4 +1,4 @@
-package com.lit.bank.exception;
+package com.lit.bank.transaction.exception;
 
 import lombok.Data;
 import org.springframework.http.HttpStatus;

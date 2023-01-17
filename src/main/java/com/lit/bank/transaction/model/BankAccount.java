@@ -1,4 +1,4 @@
-package com.lit.bank.model;
+package com.lit.bank.transaction.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
